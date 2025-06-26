@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Gear</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="headerDiv">
+            <div class="header-logo gridItem">
+                <img src="/Images/LOGO.jpg" alt="">
+            </div>
+            <select class="header-locationSelector gridItem" name="locationSelector">
+                <option value="jammu">Jammu</option>
+                <option value="kashmir">Kashmir</option>
+                <option value="haryana">Haryana</option>
+                <option value="rajasthan">Rajasthan</option>
+                <option value="punjab">Punjab</option>
+            </select>
+            <div class="header-search gridItem">
+                <input type="text" id="searchInput" placeholder="Search Here" required>
+                <input type="button" id="searchButton" value="&#128269;">
+            </div>
+            <div class="header-buttons gridItem">
+                <img src="/Images/cart.png" class="cartIcon" alt="">
+                <a href="" class="login"><img src="/Images/LoginLogo.jpeg" alt=""></a>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="links" data-page="homePage">Home</a></li>
+                <li><a href="#" class="links" data-page="aboutUsPage">About Us</a></li>
+                <li><a href="#" class="links" data-page="productPage">Products</a></li>
+                <li><a href="#" class="links" data-page="blogPage">Blog</a></li>
+                <li><a href="#" class="links" data-page="contactPage">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- There is five sections in the main tag.
+        Each contain HTML content of that page. -->
+        <!-- Here is Home Page section. -->
+        <section class="pages" id="homePage">
+            <!-- Image slider. -->
+            <section class="sliderSection">
+                <button class="sliderbtn" id="pre">&#129120;</button>
+                <div class="slider-container">
+                    <div class="slider-items active">
+                        <img src="/Images/sliderImg1.png" alt="">
+                    </div>
+                    <div class="slider-items">
+                        <img src="/Images/sliderImg2.png" alt="">
+                    </div>
+                    <div class="slider-items">
+                        <img src="/Images/sliderImg3.png" alt="">
+                    </div>
+                    
+                    <div class="slider-items">
+                        <img src="/Images/sliderImg4.png" alt="">
+                    </div>
+                    <div class="slider-items">
+                        <img src="/Images/sliderImg5.png" alt="">
+                    </div>
+                    <div class="slider-items">
+                        <img src="/Images/sliderImg6.png" alt="">
+                    </div>
+                    <div class="slider-items">
+                        <img src="/Images/sliderImg7.png" alt="">
+                    </div>
+                </div>
+                <button class="sliderbtn" id="next">&#129122;</button>
+            </section>
+            <!-- Poster with shop button. -->
+            <section class="poster" id="targetA">
+                <h2>Discover the Best Sports Gear</h2>
+                <p>High quality sports items for every athlete</p>
+                <button class="shopNow">Shop Now</button>
+            </section>
+            <!-- This section contain different featured products in a w3-card-4 -->
+            <section class="featured-products">
+                <h2>Featured Products</h2>
+                <div class="product-cards">
+                    <div class="w3-card-4">
+                        <img src="/Images/Baseketball.jpg" alt="Sports Product 2">
+                        <h3>Basketball</h3>
+                        <p>Durable and responsive basketball</p>
+                    </div>
+                    <div class="w3-card-4">
+                        <img src="/Images/badminton racket.jpeg" alt="Badminton">
+                        <h3>Badminton</h3>
+                        <p>Lightweight and durable shuttlecock for intense rallies</p>
+                    </div>
+                    <div class="w3-card-4">
+                        <img src="/Images/vollyball ball.jpeg" alt="Volleyball">
+                        <h3>Volleyball</h3>
+                        <p>Professional volleyball for indoor and outdoor games</p>
+                    </div>
+                    <div class="w3-card-4">
+                        <img src="/Images/archery arrows.jpeg" alt="Archery">
+                        <h3>Archery</h3>
+                        <p>Precision-target arrows for competitive archery</p>
+                    </div>
+                    <div class="w3-card-4">
+                        <img src="/Images/boxing gloves.jpeg" alt="Boxing">
+                        <h3>Boxing</h3>
+                        <p>High-quality boxing gloves for intense workouts</p>
+                    </div>
+                    <div class="w3-card-4">
+                        <img src="/Images/judo gi.jpeg" alt="Judo">
+                        <h3>Judo</h3>
+                        <p>Durable judo gi for professional athletes</p>
+                    </div>
+                    <div class="w3-card-4">
+                        <img src="/Images/hockey.png" alt="Hockey">
+                        <h3>Hockey</h3>
+                        <p>Professional hockey sticks and gear for the ice</p>
+                    </div>
+                    <div class="w3-card-4">
+                        <img src="/Images/tennis racket.jpeg" alt="Tennis">
+                        <h3>Tennis</h3>
+                        <p>High-performance rackets for competitive play</p>
+                    </div>
+                </div>
+            </section>
+            <!-- This section is used to select your sport from different sports mentioned. -->
+            <section class="sportItems">
+                <h1>Select Your Sport</h1><br>
+                <div class="items">
+                    <div class="itemcard">
+                        <a href="#">
+                        <img src="/Images/Cricket Bat.png" alt="">
+                        <p>Cricket</p>
+                        </a>
+                    </div>
+                    <div class="itemcard">
+                        <a href="#">
+                        <img src="/Images/Football.png" alt="">
+                        <p>Football</p>
+                        </a>
+                    </div>
+                    <div class="itemcard">
+                        <a href="#">
+                        <img src="/Images/badminton.png" alt="">
+                        <p>Badminton</p>
+                        </a>
+                    </div>
+                    <div class="itemcard">
+                        <a href="#">
+                        <img src="/Images/Baseketball.jpg" alt="">
+                        <p>Basketball</p>
+                        </a>
+                    </div>
+                    <div class="itemcard">
+                        <a href="#">
+                        <img src="/Images/hockey.png" alt="">
+                        <p>Hockey</p>
+                        </a>
+                    </div>
+                    <div class="itemcard">
+                        <a href="#">
+                        <img src="/Images/athletics.png" alt="">
+                        <p>Athletes</p>
+                        </a>
+                    </div>
+                    <div class="itemcard">
+                        <a href="#">
+                        <img src="/Images/swimming.png" alt="">
+                        <p>Swimming</p>
+                        </a>
+                    </div>
+                    <div class="itemcard">
+                        <a href="#">
+                        <img src="/Images/boxing gloves.jpeg" alt="">
+                        <p>Boxing</p>
+                        </a>
+                    </div>
+                    <div class="itemcard">
+                        <a href="#">
+                        <img src="/Images/judo.jpeg" alt="">
+                        <p>Judo</p>
+                        </a>
+                    </div>
+                    <div class="itemcard">
+                        <a href="#">
+                        <img src="/Images/squesh.jpeg" alt="">
+                        <p>Squesh</p>
+                        </a>
+                    </div>
+                    <div class="itemcard">
+                        <a href="#">
+                        <img src="/Images/vollyball.jpeg" alt="">
+                        <p>Vollyball</p>
+                        </a>
+                    </div>
+                    <div class="itemcard">
+                        <a href="#">
+                        <img src="/Images/handball.jpeg" alt="">
+                        <p href>Handball</p>
+                        </a>
+                    </div>
+                    <div class="itemcard">
+                        <a href="#">
+                        <img src="/Images/archery.png" alt="">
+                        <p>Archery</p>
+                        </a>
+                    </div>
+                    <div class="itemcard">
+                        <a href="#">
+                        <img src="/Images/tennis.jpeg" alt="">
+                        <p>Tennis</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- Here is the About Us page section. -->
+        <section class="pages" id="aboutUsPage">
+            <section class="about-us">
+                <h1>About Us</h1>
+                <div class="content">
+                    <div class="story">
+                        <h2>Our Story</h2>
+                        <p>Welcome to Sports Shop, your one-stop shop for high-quality sports equipment! Our journey began in 2024 with a passion for promoting healthy lifestyles through sports. We believe that the right equipment makes all the difference in performance, and we are dedicated to providing athletes of all levels with top-notch products to elevate their game.</p>
+                    </div>
+                    <div class="mission">
+                        <h2>Our Mission</h2>
+                        <p>Our mission is to provide athletes with the best selection of sports equipment, from beginner to professional level. We aim to foster a strong community of sports enthusiasts by offering excellent customer service and delivering quality products at competitive prices.</p>
+                    </div>
+                    <div class="product-range">
+                        <h2>What We Offer</h2>
+                        <p>From footballs, basketballs, and tennis rackets to gym accessories and apparel, we have it all! Our collection is handpicked to ensure durability, performance, and style. Whatever your sport, we've got you covered!</p>
+                    </div>
+                    <div class="team">
+                        <h2>Meet the Team</h2>
+                        <p>Our team consists of passionate individuals who love sports and are dedicated to providing you with the best service possible. Together, we work hard to ensure you have the best shopping experience.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="end-point">
+                    <p>Ready to elevate your game? <a class="about-shopNow">Shop Now</a> and get the best sports gear!</p>
+                </div>
+                <br>
+            </section>
+        </section>
+        <!-- Here is the Products page section. -->
+        <section class="pages" id="productPage">
+            <section class="product-list">
+                <h2>Our Products</h2>
+                <div class="product-catagory">
+                    <ul>
+                        <!-- List of different sports to select which type of item you want to buy. -->
+                        <li class="product-catagory-item" onclick="catagorySelected(this)">
+                            <p>Cricket</p>
+                        </li>
+                        <li class="product-catagory-item" onclick="catagorySelected(this)">
+                            <p>Basketball</p>
+                        </li>
+                        <li class="product-catagory-item" onclick="catagorySelected(this)">
+                            <p>Judo</p>
+                        </li>
+                        <li class="product-catagory-item" onclick="catagorySelected(this)">
+                            <p>Badminton</p>
+                        </li>
+                        <li class="product-catagory-item" onclick="catagorySelected(this)">
+                            <p>Kabadi</p>
+                        </li>
+                        <li class="product-catagory-item" onclick="catagorySelected(this)">
+                            <p>Hockey</p>
+                        </li>
+                        <li class="product-catagory-item" onclick="catagorySelected(this)">
+                            <p>Football</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Here is the card of differnt sport items. -->
+                    <div class="product-card">
+                        <img src="/Images/slipping rope.jpg" alt="Product 1">
+                        <div class="product-info">
+                            <h3>Skipping Rope</h3>
+                            <p> &#8377; 199</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/Images/Cricket Bat.png" alt="Product 2">
+                        <div class="product-info">
+                            <h3>Cricket Bat</h3>
+                            <p> &#8377; 7899</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/Images/hockey.png" alt="Product 3">
+                        <div class="product-info">
+                            <h3>Hockey Bat</h3>
+                            <p> &#8377; 749</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/Images/dumbells.jpg" alt="Product 4">
+                        <div class="product-info">
+                            <h3>Adujstable Bumbells</h3>
+                            <p> &#8377; 1899</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/Images/swimming suit.png" alt="Product 5">
+                        <div class="product-info">
+                            <h3>Swimming Suit</h3>
+                            <p> &#8377; 2599</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/Images/baseball Bat.png" alt="Product 5">
+                        <div class="product-info">
+                            <h3>Basketball</h3>
+                            <p> &#8377; 1149</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/Images/resistance band.jpg" alt="Product 5">
+                        <div class="product-info">
+                            <h3>Resistance Band</h3>
+                            <p> &#8377; 489</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/Images/boxing.jpg" alt="Product 5">
+                        <div class="product-info">
+                            <h3>Boxing Kit</h3>
+                            <p> &#8377; 2999</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/Images/table tennis.jpg" alt="Product 5">
+                        <div class="product-info">
+                            <h3>Table Tennis Kit</h3>
+                            <p> &#8377; 680</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/Images/running shoes.png" alt="Product 5">
+                        <div class="product-info">
+                            <h3>Sport Shoes</h3>
+                            <p> &#8377; 3199</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/Images/grip strengther.png" alt="Product 5">
+                        <div class="product-info">
+                            <h3>Grip Strengther</h3>
+                            <p> &#8377; 199</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/Images/badminton.png" alt="Product 5">
+                        <div class="product-info">
+                            <h3>Badminton Kit</h3>
+                            <p> &#8377; 899</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- Here is the Blog page section. -->
+        <section class="pages" id="blogPage">
+            <section class="blog">
+                <!-- Different blogs are created in the below div. -->
+                <div class="posts">
+                    <div class="postItem">
+                        <div class="postImg">
+                            <img src="/Images/Baseketball.jpg" alt="Image of a basketball">
+                        </div>
+                        <div class="postHeading">
+                            <h2>Top 5 Basketballs You Need to Try</h2>
+                        </div>
+                    </div>
+                    <div class="postText">
+                        <p>Basketball is essential to your performance, whether you’re playing for fun or at a competitive level. The best basketballs of 2024 offer durability, excellent grip, and consistent bounce. Top brands like Spalding, Wilson, and Nike provide basketballs suited for both indoor and outdoor play. A great ball ensures comfort, precision, and control during every move, from dribbling to shooting. Whether for practice or competition, choosing the right basketball can elevate your game.</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                
+                <div class="posts">
+                    <div class="postItem">
+                        <div class="postImg">
+                            <img src="/Images/Football.png" alt="Image of a football">
+                        </div>
+                        <div class="postHeading">
+                            <h2>The Best Football Gear for 2024</h2>
+                        </div>
+                    </div>
+                    <div class="postText">
+                        <p>Football requires the right gear to ensure safety and performance. In 2024, advanced helmets, cleats, and other equipment provide enhanced protection and comfort. High-quality football gear from brands like Nike and Adidas offers superior traction, comfort, and performance, keeping players safe and improving their game on the field.</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                
+                <div class="posts">
+                    <div class="postItem">
+                        <div class="postImg">
+                            <img src="/Images/running shoes.png" alt="Image of running shoes">
+                        </div>
+                        <div class="postHeading">
+                            <h2>Top Running Shoes for Long Distance</h2>
+                        </div>
+                    </div>
+                    <div class="postText">
+                        <p>The right running shoes are crucial for long-distance runners. The best shoes of 2024 combine cushioning, support, and durability, helping runners maintain comfort and performance over long distances. Shoes like Nike ZoomX Vaporfly and Adidas Ultraboost offer superior energy return, minimizing fatigue and enhancing your run.</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                
+                <div class="posts">
+                    <div class="postItem">
+                        <div class="postImg">
+                            <img src="/Images/Swimming.png" alt="Image of swimming accessories">
+                        </div>
+                        <div class="postHeading">
+                            <h2>Swimming Accessories You Must Have</h2>
+                        </div>
+                    </div>
+                    <div class="postText">
+                        <p>Swimming requires the right accessories to enhance performance and comfort. Goggles, swim caps, and high-performance swimsuits are essential for competitive swimmers. Accessories like swim fins and waterproof headphones can help improve your technique, while a dry bag keeps your gear organized and dry.</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                
+                <div class="posts">
+                    <div class="postItem">
+                        <div class="postImg">
+                            <img src="/Images/Badminton.png" alt="Image of a badminton racket">
+                        </div>
+                        <div class="postHeading">
+                            <h2>Best Badminton Rackets for Every Player</h2>
+                        </div>
+                    </div>
+                    <div class="postText">
+                        <p>Choosing the right badminton racket is key to your performance. In 2024, rackets offer a variety of materials and designs for different play styles. From lightweight rackets for beginners to high-performance options for advanced players, the right racket will improve your accuracy, speed, and overall game on the court.</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>                  
+                <br>                    
+            </section>
+        </section>
+        <!-- Here is the Contact page section. -->
+        <section class="pages" id="contactPage">
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <form id="myForm">
+                    <input type="text" id="name"placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="msg" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <br>
+            </section>
+        </section>
+        <!-- This is the section for the cart. -->
+        <section class="shoppingCart">
+            <div class="cartDiv">
+                <h3>Your Items</h3>
+            </div>
+        </section>
+        <!-- This is the go-to-top button. -->
+        <button id="goToTopBtn" class="go-to-top-btn">&#129121;</button>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footerLogo">
+                <img src="/Images/LOGO.jpg" alt="" height="80px">
+                <p>Unleash Your Potential with the Best Sports Gear at Unbeatable Prices!</p>
+            </div>
+            <div class="catagories">
+                <h3 class="footer-title">Categories</h3>
+                <a>Athletes</a>
+                <a>Sports</a>
+                <a>Cricket</a>
+                <a>Football</a>
+            </div>
+            <div class="UsefulLinks">
+                <h3 class="footer-title">Useful Links</h3>
+                <a class="footerHome">Home</a>
+                <a class="footerAboutUs">About Us</a>
+                <a class="footerProducts">Products</a>
+                <a class="footerBlogs">Blogs</a>
+                <a class="footerContact">Contact</a>
+            </div>
+            <div class="helpCenter">
+                <h3 class="footer-title">Help Center</h3>
+                <a>Your Order</a>
+                <a>Your Account</a>
+                <a>Track Order</a>
+                <a>Your Wishlist</a>
+                <a>Search</a>
+                <a>FAQ</a>
+            </div>
+            <div class="contactUs">
+                <h3 class="footer-title">Contact Us</h3>
+                <div>98089979XX</div><br>
+                <div>97979997XX</div><br>
+                <a href="#"><p>sportsgear@gmail.com</p></a>
+            </div>
+            <p class="copyRight">&copy; 2024 Sports Gear. All rights reserved.</p>
+        </div>
+        <!-- The below div contain links for the social platform. -->
+        <div class="socialAccounts">
+            <a href="#facebook"  class="socialMedia">
+                <i class="fab fa-facebook-f"></i>
+                <p>Facebook</p>
+            </a>
+            <a href="#instagram" class="socialMedia" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <p>Instagram</p>
+            </a>
+            <a href="#twitter" class="socialMedia">
+                <i class="fab fa-twitter"></i>
+                <p>Twitter</p>
+            </a>
+            <a href="#linkedIn" class="socialMedia">
+                <i class="fab fa-linkedin"></i>
+                <p>LinkedIn</p>
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
